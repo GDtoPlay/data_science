@@ -1,9 +1,9 @@
-import sql_filter.py as sql_filter
+import sql_filter
 import base64
 import pickle
 
-fw1 = open('data_maker/sql_오탐.txt', 'r')
-fw2 = open('data_maker/sql_정탐.txt', 'r')
+fw1 = open('data_maker/sql_오탐.txt', 'r', encoding='utf-8')
+fw2 = open('data_maker/sql_정탐.txt', 'r', encoding='utf-8')
 
 
 data_int = [[], []]
