@@ -30,8 +30,11 @@ def sql_str_maker(file, json_data):
                         else:
                             sql_data = sql_data + decoded
 
+            while '\n' in sql_data:
+                sql_data = sql_data.replace('\n', '')
 
-            file.write(sql_data + '\n')
+            if sql_data is not '':
+                file.write(sql_data + '\n')
 
 fw1 = open('sql_오탐.txt', 'w', encoding='utf8')
 fw2 = open('sql_정탐.txt', 'w', encoding='utf8')
