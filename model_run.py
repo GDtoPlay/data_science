@@ -13,8 +13,8 @@ C = 1.0
 gamma = 1.0
 
 try:
-    C = float(int(input("C 값 입력\n")))
-    gamma = float(int(input("gamma 값 입력\n")))
+    C = float(input("C 값 입력\n"))
+    gamma = float(input("gamma 값 입력\n"))
 
 except ValueError as e:
     print(e)
