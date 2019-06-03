@@ -58,7 +58,7 @@ def find_index(row_1,string):
 		return 99
 	return cnt
 def debug(name,token,method):
-	f = open("./error/"+name,"a",encoding="utf-8")
+	f = open("../error/"+name,"a",encoding="utf-8")
 	f.write("\n"+method+" "+token+"\n++++++++++++++++++") #POST /test.asp 로 만들기 
 	f.close()
 def totxt(token,method,file):
