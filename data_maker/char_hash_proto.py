@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 import json
 import base64
 from string import ascii_lowercase, ascii_uppercase
@@ -13,11 +15,11 @@ with open('sql_json_2.json') as sql_injection_json_2:
 
 
             
-def sql_str_maker(file, json_data)
+def sql_str_maker(file, json_data):
     for sql_json in json_data:
         if "DATA" in sql_json:
+            sql_data = ''
             for DATA in sql_json["DATA"]:
-                sql_data = ''
                 for base64_data in DATA:
                     if base64_data != '':
                         decoded = str(base64.b64decode(base64_data), encoding='utf-8')
@@ -29,10 +31,10 @@ def sql_str_maker(file, json_data)
                             sql_data = sql_data + decoded
 
 
-                file.write(sql_data + '\n')
+            file.write(sql_data + '\n')
 
-fw1 = open('sql_오탐.txt', 'w')
-fw2 = open('sql_정탐.txt', 'w')
+fw1 = open('sql_오탐.txt', 'w', encoding='utf8')
+fw2 = open('sql_정탐.txt', 'w', encoding='utf8')
 
 sql_str_maker(fw1, json_data_1)
 sql_str_maker(fw2, json_data_2)
