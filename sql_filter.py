@@ -1,5 +1,16 @@
 import copy
 
+
+def tree_to_plain(tree, ret_list):
+    for data in tree:
+        if type(data) is list:
+            tree_to_plain(data, ret_list)
+
+        else:
+            ret_list.append(data)
+
+
+
 def parse(origin_sql):
     sql = []
     flag = 0

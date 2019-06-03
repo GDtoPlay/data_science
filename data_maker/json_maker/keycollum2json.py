@@ -6,10 +6,10 @@ import json
 import codecs
 from collections import OrderedDict
 
-dname = "utf8"
+dname = "../utf8"
 fnames = os.listdir(dname)
 for fname in fnames:
-    jname = "json_raw/" + fname[:-4] + ".json"
+    jname = "../json_raw/" + fname[:-4] + ".json"
     cname = dname + "/" + fname
     
     jsonfile = open(jname, 'w', encoding="utf-8")

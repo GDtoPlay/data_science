@@ -9,7 +9,7 @@ import urllib.parse
 import base64
 
 
-dirname = "utf8/"
+dirname = "../utf8/"
 #파일마다 열순서가 다르다 그래서 특정 문자가 몇번째 열에잇는지 구하는것
 time_index = index_dict("장비발생시간",dirname)
 sip_index = index_dict("출발지IP",dirname)
@@ -29,7 +29,7 @@ try:	filenames.remove("desktop.ini") #desktop.ini 잇으면 삭제 없으면 패
 except:	pass
 
 for file in filenames:
-	csvtojson = open('json/' + file[:-4] + '.json', 'w', encoding="utf-8")
+	csvtojson = open('../json/' + file[:-4] + '.json', 'w', encoding="utf-8")
 	csvtojson.write("[\n")
 	f = open(dirname+file,'r',encoding='utf-8') 
 	rdr = csv.reader(f)

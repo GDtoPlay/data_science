@@ -1,6 +1,7 @@
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import make_blobs
+from sklearn.externals import joblib
 import matplotlib.pyplot as plt
 import numpy
 import mglearn
@@ -17,6 +18,8 @@ def model_train(data_and_target, data_row_size, set_C, set_gamma):
 
     print("훈련 세트 정확도: {:.2f}".format(svc.score(X_train, y_train)))
     print("테스트 세트 정확도: {:.2f}".format(svc.score(X_test, y_test)))
+
+    joblib.dump(svc, 'parameter_c_'+str(set_C)+'_gamma_' +str(set_gamma)+ '.pkl')
 
     return svc
 
@@ -38,5 +41,3 @@ def test():
 
     plt.legend()
     plt.show()
-
-test()
