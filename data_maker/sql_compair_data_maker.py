@@ -46,7 +46,6 @@ for fname in fnames1:
             file_data["FILE"] = fname
             file_data["MSG"] = data["MSG"]
             file_data["RES"] = data["RES"]
-            file_data["RAW_PAYLOAD"] = data["RAW_PAYLOAD"]
             tmp = []
             for payload in data["PAYLOAD"]:
                 tempdata = []
