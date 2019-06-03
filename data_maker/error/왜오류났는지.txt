@@ -1,0 +1,4 @@
+POST_urlencode : contentlength가 0보다큰데 내용이없음
+
+multipart : boundary = xxxxxxxx  이렇게 되어야하는데 데이터가짤림 (bo 만나오고짤림), 
+            data부분에서도 데이터가짤림(content-type나오고 파싱하는걸로 짰는데 content-type뒤에 아무것도없어서 오류)
