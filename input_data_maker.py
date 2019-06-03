@@ -1,6 +1,7 @@
 import sql_filter
 import base64
 import pickle
+import math
 
 fw1 = open('data_maker/sql_오탐.txt', 'r', encoding='utf-8')
 fw2 = open('data_maker/sql_정탐.txt', 'r', encoding='utf-8')
@@ -26,7 +27,7 @@ for line in lines_1:
         for data in line_plain:
             b = data.encode("UTF-8")
             e = base64.b64encode(b)
-            line_data_list.append(int.from_bytes(e,byteorder='big'))
+            line_data_list.append(math.log(int.from_bytes(e,byteorder='big')))
 
         if max_len < len(line_data_list):
             max_len = len(line_data_list)
@@ -52,7 +53,7 @@ for line in lines_2:
         for data in line_plain:
             b = data.encode("UTF-8")
             e = base64.b64encode(b)
-            line_data_list.append(int.from_bytes(e,byteorder='big'))
+            line_data_list.append(math.log(int.from_bytes(e,byteorder='big')))
 
         if max_len < len(line_data_list):
             max_len = len(line_data_list)

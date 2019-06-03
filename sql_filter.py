@@ -87,6 +87,30 @@ def splitcheck(origin_sql):
                     sql.append(')')
                     start = idx + 1
 
+                elif char == '/':
+                    end = idx - 1
+                    if end >= 0:
+                        if chunk[start:end + 1] != '':
+                            sql.append(chunk[start:end + 1])
+                    sql.append('/')
+                    start = idx + 1
+
+                elif char == '/':
+                    end = idx - 1
+                    if end >= 0:
+                        if chunk[start:end + 1] != '':
+                            sql.append(chunk[start:end + 1])
+                    sql.append('/')
+                    start = idx + 1
+
+                elif char == '+':
+                    end = idx - 1
+                    if end >= 0:
+                        if chunk[start:end + 1] != '':
+                            sql.append(chunk[start:end + 1])
+                    sql.append('+')
+                    start = idx + 1
+
             if start != len(chunk):
                 sql.append(chunk[start:])
                     
