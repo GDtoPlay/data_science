@@ -353,24 +353,5 @@ def sql_tree_maker(origin_sql):
                 return sql[:idx] + [sql_tree_maker(parse(word))]
 
     return sql
-                        
-                        
-                    
-
-            
-      
-        
-
-
-test = "select a, b,( select c,d from e) from f,g where h"
-test_split = (test.lower()).split()
-test_a = splitcheck(test_split)
-test_b = parse(test_a)
-test_c = sql_tree_maker(test_b)
-
-print(test_a)
-print(test_b)
-
-print(test_c)
 
 
