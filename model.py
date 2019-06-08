@@ -19,7 +19,7 @@ def model_train(data_and_target, data_row_size, set_C, set_gamma):
     print("훈련 세트 정확도: {:.2f}".format(svc.score(X_train, y_train)))
     print("테스트 세트 정확도: {:.2f}".format(svc.score(X_test, y_test)))
 
-    joblib.dump(svc, 'parameter_c_'+str(set_C)+'_gamma_' +str(set_gamma)+ '.pkl')
+    joblib.dump(svc, 'model_save/parameter_c_'+str(set_C)+'_gamma_' +str(set_gamma)+ '.pkl')
 
     return svc
 
