@@ -1,4 +1,5 @@
 1. data_maker/json_maker 에 있는 main.py 실행
+   data_maker/json_maker 에 있는 main_2019_log2.py 실행
 
 2.  data_maker에 있는 sql_compair_data_maker.py 실행
 
