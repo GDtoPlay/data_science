@@ -8343,3 +8343,393 @@ connection: keep-alive
 cache-control: no-cache
 cookie: 
 ++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0fe0501a06b2ce4a7da90c308c09b50590%26listtype%3ddraftwait&ssouid=u0210328
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0; atmessenger)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: uid=210328; docposition=l%3a0%2ct%3a0%2cw%3a1809%2ch%3a950; jsession_portal=vnz90dpey4ortiu-75upw7paransjh5fidawz7s9tb28--7vu33d!1334735976!1026387331; jsession_gw=m9x90fcybi-jl0qwn9j16cv70xwpvea9s0fhldm57l4k
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcmiscservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/5.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; tablet pc 2.0; moasigns=1.0.45; atmessenger; moasigns=1.0.45)
+host: wiseportal.lh.or.kr:8081
+content-length: 72
+connection: keep-alive
+cache-control: no
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcpackreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/5.0 (compatible; msie 10.0; windows nt 6.1; trident/6.0)
+host: wiseportal.lh.or.kr:8081
+content-length: 95
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: jsession_portal=hcz8kafqeaurcikgses4vsmzkijls1dvqcjtxufrpie0aunl7ys3!1334735976!1026387331; jsession_gw=zwr8j3f3rswdbzuhd1oipbze13ybwwn7ayzhx_eavskbnidlhje1!836475783!265407812; docposition=l%3a0%2ct%3a0%2cw%3a1900%2ch%3a998; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1546123582zpy86400zay45zey525uoqfh1tpraix2b9d0x79x2fh55wabbtquqitdqvk55kega5shzefx7ag4hnxo6mx79enmdozkynfht1a68hcujn5p2vokdrax78nfspj9p8l2ksuj0xzywbm7p1nvrqctu6jp8x2fbua3czssy0000000
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0f62a0e61efc1746c6a9ed9b7587f88bfa%26listtype%3ddraftwait&ssouid=u0410482
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: docposition=l%3a0%2ct%3a0%2cw%3a1809%2ch%3a950; uid=410482; jsession_portal=02r4tkwd3wogqckm2j0eozsqrsqzqvmxn5mpw3xjbux3qfzpodlc!1334735976!1026387331; jsession_gw=s0x4tu4o9mwpvzpo5aj-i8md2idhxwqlw-fuvsqifo8xp8ef7dx9!634972671!1003900479; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1546065839zpy86400zay45zeynnto
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0fe0501a06b2ce4a7da90c308c09b50590%26listtype%3ddraftwait&ssouid=u0210328
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0; atmessenger)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: uid=210328; docposition=l%3a0%2ct%3a0%2cw%3a1809%2ch%3a950; jsession_portal=vnz90dpey4ortiu-75upw7paransjh5fidawz7s9tb28--7vu33d!1334735976!1026387331; jsession_gw=m9x90fcybi-jl0qwn9j16cv70xwpvea9s0fhldm57l4k
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcmiscservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/5.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; tablet pc 2.0; moasigns=1.0.45; atmessenger; moasigns=1.0.45)
+host: wiseportal.lh.or.kr:8081
+content-length: 72
+connection: keep-alive
+cache-control: no
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcpackreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/5.0 (compatible; msie 10.0; windows nt 6.1; trident/6.0)
+host: wiseportal.lh.or.kr:8081
+content-length: 95
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: jsession_portal=hcz8kafqeaurcikgses4vsmzkijls1dvqcjtxufrpie0aunl7ys3!1334735976!1026387331; jsession_gw=zwr8j3f3rswdbzuhd1oipbze13ybwwn7ayzhx_eavskbnidlhje1!836475783!265407812; docposition=l%3a0%2ct%3a0%2cw%3a1900%2ch%3a998; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1546123582zpy86400zay45zey525uoqfh1tpraix2b9d0x79x2fh55wabbtquqitdqvk55kega5shzefx7ag4hnxo6mx79enmdozkynfht1a68hcujn5p2vokdrax78nfspj9p8l2ksuj0xzywbm7p1nvrqctu6jp8x2fbua3czssy0000000
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0f62a0e61efc1746c6a9ed9b7587f88bfa%26listtype%3ddraftwait&ssouid=u0410482
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: docposition=l%3a0%2ct%3a0%2cw%3a1809%2ch%3a950; uid=410482; jsession_portal=02r4tkwd3wogqckm2j0eozsqrsqzqvmxn5mpw3xjbux3qfzpodlc!1334735976!1026387331; jsession_gw=s0x4tu4o9mwpvzpo5aj-i8md2idhxwqlw-fuvsqifo8xp8ef7dx9!634972671!1003900479; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1546065839zpy86400zay45zeynnto
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0fa55e8492c8434b19912c35e052e83adc%26listtype%3ddraftwait&ssouid=u0210335
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.2; tablet pc 2.0; markanyeps#25108; markanywebdrm#25114; atmessenger)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: docposition=l
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; markanywebdrm#25114; markanyeps#25118; printmade=3.0.0.8; atmessenger)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: _ga=ga1.3.1091635847.1508130362; on=; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545867747zpy86400zay45zeyn9x7
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; atmessenger)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: uid=116382; docposition=l%3a0%2ct%3a0%2cw%3a1900%2ch%3a998; jsession_portal=cqvdtn7fhvtezbmettys2ujvr9m2d689lp_quvarlk4wocof5cny!442199736!1976553889; jsession_gw=-szdtpwr8hnlapq5ugrzvdy6t_er_tl5vsrntsqiflwgcuzzdx5l!469124821!279916355; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545612971zpy86400zay45zeyrcvyamgboe3xw3k9j6bi3d27u9hx2boebeczk42luex2f8plox9lg0gite0dur40x2fh0fzky
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0ff5d34443bb5d4b0281186e780fcf5b5e%26listtype%3ddraftwait&ssouid=u0210162
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; markanywebdrm#25114; markanyeps#25108)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: docposition=l%3a0%2ct%3a0%2cw%3a1880%2ch%3a976; jsession_portal=dp3dm-taptwtd3oyuzdojvae-s3fsah8flvrsh37bmsyh8xhskc9!536592751!-1530180462; jsession_gw=id_dng2_0co8ifaalxkktkch3n2sl651mak04odyadpbxuujetak!279916355!469124821; ssoto
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0; atmessenger; printmade=3.0.0.8)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: uid=410224; docposition=l%3a0%2ct%3a0%2cw%3a1900%2ch%3a998; jsession_portal=e6haid1hvlqqa6pnpfhlzr0lxwu8ricsw5ynmqium9ftcldb1yuw!-1530180462!536592751; jsession_gw=xbvaioyz4xnbjsheuk30upf5anozyll_omhihv7qxm6gootkstzz!1957060835!1002190207; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545552751zpy86400zay45zey
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 10.0; windows nt 6.1; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; tablet pc 2.0; atmessenger)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: _ga=ga1.3.53785063.1483665181; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545436387zpy86400zay45zeymhx2boq27zyaix2fkx2flnlbncr0ftx2fuodux7ax2fu1ghx2fjum36jgudjqytx2bvlv7vzjhoeq42x79zky5wrvkip9hdqk7x79gwvex796noaux2fd0fcxt6ulkbp2qaqvtc
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcmiscservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; markanywebdrm#25114; markanyeps#25108)
+host: wiseportal.lh.or.kr:8081
+content-length: 72
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: 
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0fe0501a06b2ce4a7da90c308c09b50590%26listtype%3ddraftwait&ssouid=u0210328
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0; atmessenger)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: uid=210328; docposition=l%3a0%2ct%3a0%2cw%3a1809%2ch%3a950; jsession_portal=vnz90dpey4ortiu-75upw7paransjh5fidawz7s9tb28--7vu33d!1334735976!1026387331; jsession_gw=m9x90fcybi-jl0qwn9j16cv70xwpvea9s0fhldm57l4k
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcmiscservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/5.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; tablet pc 2.0; moasigns=1.0.45; atmessenger; moasigns=1.0.45)
+host: wiseportal.lh.or.kr:8081
+content-length: 72
+connection: keep-alive
+cache-control: no
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcpackreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/5.0 (compatible; msie 10.0; windows nt 6.1; trident/6.0)
+host: wiseportal.lh.or.kr:8081
+content-length: 95
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: jsession_portal=hcz8kafqeaurcikgses4vsmzkijls1dvqcjtxufrpie0aunl7ys3!1334735976!1026387331; jsession_gw=zwr8j3f3rswdbzuhd1oipbze13ybwwn7ayzhx_eavskbnidlhje1!836475783!265407812; docposition=l%3a0%2ct%3a0%2cw%3a1900%2ch%3a998; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1546123582zpy86400zay45zey525uoqfh1tpraix2b9d0x79x2fh55wabbtquqitdqvk55kega5shzefx7ag4hnxo6mx79enmdozkynfht1a68hcujn5p2vokdrax78nfspj9p8l2ksuj0xzywbm7p1nvrqctu6jp8x2fbua3czssy0000000
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0f62a0e61efc1746c6a9ed9b7587f88bfa%26listtype%3ddraftwait&ssouid=u0410482
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: docposition=l%3a0%2ct%3a0%2cw%3a1809%2ch%3a950; uid=410482; jsession_portal=02r4tkwd3wogqckm2j0eozsqrsqzqvmxn5mpw3xjbux3qfzpodlc!1334735976!1026387331; jsession_gw=s0x4tu4o9mwpvzpo5aj-i8md2idhxwqlw-fuvsqifo8xp8ef7dx9!634972671!1003900479; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1546065839zpy86400zay45zeynnto
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0fa55e8492c8434b19912c35e052e83adc%26listtype%3ddraftwait&ssouid=u0210335
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.2; tablet pc 2.0; markanyeps#25108; markanywebdrm#25114; atmessenger)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: docposition=l
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; markanywebdrm#25114; markanyeps#25118; printmade=3.0.0.8; atmessenger)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: _ga=ga1.3.1091635847.1508130362; on=; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545867747zpy86400zay45zeyn9x7
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; atmessenger)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: uid=116382; docposition=l%3a0%2ct%3a0%2cw%3a1900%2ch%3a998; jsession_portal=cqvdtn7fhvtezbmettys2ujvr9m2d689lp_quvarlk4wocof5cny!442199736!1976553889; jsession_gw=-szdtpwr8hnlapq5ugrzvdy6t_er_tl5vsrntsqiflwgcuzzdx5l!469124821!279916355; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545612971zpy86400zay45zeyrcvyamgboe3xw3k9j6bi3d27u9hx2boebeczk42luex2f8plox9lg0gite0dur40x2fh0fzky
+++++++++++++++++++
+POST /nanum/cflow/site/lh/document/realopendoc.jsp http/1.1
+accept: image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/sso/lh/gw_login.jsp?gwuurl=%2fnanum%2fcflow%2fsite%2flh%2fdocument%2frealopendoc.jsp%3fdocid%3dd0ff5d34443bb5d4b0281186e780fcf5b5e%26listtype%3ddraftwait&ssouid=u0210162
+accept-language: ko-kr
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; markanywebdrm#25114; markanyeps#25108)
+content-type: application/x-www-form-urlencoded
+accept-encoding: gzip, deflate
+host: wiseportal.lh.or.kr:8081
+content-length: 60
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: docposition=l%3a0%2ct%3a0%2cw%3a1880%2ch%3a976; jsession_portal=dp3dm-taptwtd3oyuzdojvae-s3fsah8flvrsh37bmsyh8xhskc9!536592751!-1530180462; jsession_gw=id_dng2_0co8ifaalxkktkch3n2sl651mak04odyadpbxuujetak!279916355!469124821; ssoto
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/6.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3; tablet pc 2.0; atmessenger; printmade=3.0.0.8)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: uid=410224; docposition=l%3a0%2ct%3a0%2cw%3a1900%2ch%3a998; jsession_portal=e6haid1hvlqqa6pnpfhlzr0lxwu8ricsw5ynmqium9ftcldb1yuw!-1530180462!536592751; jsession_gw=xbvaioyz4xnbjsheuk30upf5anozyll_omhihv7qxm6gootkstzz!1957060835!1002190207; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545552751zpy86400zay45zey
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcreadservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 10.0; windows nt 6.1; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; tablet pc 2.0; atmessenger)
+host: wiseportal.lh.or.kr:8081
+content-length: 236
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: _ga=ga1.3.53785063.1483665181; ssotoken=vy3zfyenginex5f1ztygidx5fdemo1zcy1545436387zpy86400zay45zeymhx2boq27zyaix2fkx2flnlbncr0ftx2fuodux7ax2fu1ghx2fjum36jgudjqytx2bvlv7vzjhoeq42x79zky5wrvkip9hdqk7x79gwvex796noaux2fd0fcxt6ulkbp2qaqvtc
+++++++++++++++++++
+POST /servlet/com.nanum.xf.servlet.ofc.xfofcmiscservlet http/1.1
+accept: */*
+accept-language: ko-kr
+browser-type: ie
+referer: http://wiseportal.lh.or.kr:8081/nanum/cflow/document/sanc/wait/wait_dochandler.jsp
+content-type: application/x-www-form-urlencoded
+access-type: ajax
+accept-encoding: gzip, deflate
+user-agent: mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; .net4.0c; .net4.0e; markanywebdrm#25114; markanyeps#25108)
+host: wiseportal.lh.or.kr:8081
+content-length: 72
+dnt: 1
+connection: keep-alive
+cache-control: no-cache
+cookie: 
+++++++++++++++++++

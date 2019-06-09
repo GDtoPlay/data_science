@@ -59,7 +59,7 @@ def subparse(sql,start):
 def splitcheck(origin_sql):
     sql = []
     for chunk in origin_sql:
-        if ',' in chunk or '(' in chunk or ')' in chunk:
+        if ',' in chunk or '(' in chunk or ')' or '+' or '&' or '='in chunk:
             start = 0
             end = 0
             for idx, char in enumerate(chunk):
@@ -87,20 +87,20 @@ def splitcheck(origin_sql):
                     sql.append(')')
                     start = idx + 1
 
-                elif char == '/':
+                elif char == '=':
                     end = idx - 1
                     if end >= 0:
                         if chunk[start:end + 1] != '':
                             sql.append(chunk[start:end + 1])
-                    sql.append('/')
+                    sql.append('=')
                     start = idx + 1
 
-                elif char == '/':
+                elif char == '&':
                     end = idx - 1
                     if end >= 0:
                         if chunk[start:end + 1] != '':
                             sql.append(chunk[start:end + 1])
-                    sql.append('/')
+                    sql.append('&')
                     start = idx + 1
 
                 elif char == '+':
