@@ -1,5 +1,6 @@
 sql tree module
 1. data_maker/json_maker 에 있는 main.py 실행
+   data_maker/json_maker 에 있는 main_2019_log1.py 실행
    data_maker/json_maker 에 있는 main_2019_log2.py 실행
 
 2.  data_maker에 있는 sql_compair_data_maker.py 실행
@@ -14,6 +15,7 @@ sql tree module
 
 sepcial word character module
 1. data_maker/json_maker 에 있는 special.py 실행
+   data_maker/json_maker 에 있는 main_2019_log1_special.py 실행
    data_maker/json_maker 에 있는 main_2019_log2_special.py 실행
 
 2.  data_maker에 있는 sql_compair_data_maker_special.py 실행
