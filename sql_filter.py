@@ -299,7 +299,7 @@ def sql_tree_maker(origin_sql):
             if 'group' in sql_chunk:
                 temp_pos = sql_chunk.index('group')
                 if temp_pos < len(sql_chunk) - 1:
-                    if sql_chunk[temp_loc + 1] == 'by':
+                    if sql_chunk[temp_pos + 1] == 'by':
                         pos_in_order_list.append(temp_pos)
 
             if 'having' in sql_chunk:
@@ -309,7 +309,7 @@ def sql_tree_maker(origin_sql):
             if 'order' in sql_chunk:
                 temp_pos = sql_chunk.index('order')
                 if temp_pos < len(sql_chunk) - 1:
-                    if sql_chunk[temp_loc + 1] == 'by':
+                    if sql_chunk[temp_pos + 1] == 'by':
                         pos_in_order_list.append(temp_pos)
 
             make_sence = True
