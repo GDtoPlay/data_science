@@ -22,4 +22,4 @@ except ValueError as e:
     C = 10000.0
     gamma = 1.0
 
-model.model_train(data, data_row_size, C, gamma)
+model.model_train(data, data_row_size, C, gamma, False)

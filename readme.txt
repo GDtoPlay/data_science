@@ -10,11 +10,12 @@ sql tree module
 4. input_data_maker.py 실행
 
 5. model_run.py에 적절한 C값과 gamma 값을 주고 실행
+(data_science/model_save 폴더 필요)
 
 
 
-sepcial word character module
-1. data_maker/json_maker 에 있는 special.py 실행
+special word character module
+1. data_maker/json_maker 에 있는 main_special.py 실행
    data_maker/json_maker 에 있는 main_2019_log1_special.py 실행
    data_maker/json_maker 에 있는 main_2019_log2_special.py 실행
 
@@ -25,3 +26,4 @@ sepcial word character module
 4. input_data_maker_special.py 실행
 
 5. model_run.py에 적절한 C값과 gamma 값을 주고 실행
+(data_science/model_save_special 폴더 필요)

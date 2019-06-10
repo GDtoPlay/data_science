@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy
 import mglearn
 
-def model_train(data_and_target, data_row_size, set_C, set_gamma):
+def model_train(data_and_target, data_row_size, set_C, set_gamma, special):
 
     data = data_and_target[0]
     target = data_and_target[1]    # data_and_target: [data, target]
@@ -16,10 +16,12 @@ def model_train(data_and_target, data_row_size, set_C, set_gamma):
     svc = SVC(kernel='rbf', C=set_C, gamma=set_gamma).fit(X_train, y_train)
 
 
-    print("훈련 세트 정확도: {:.2f}".format(svc.score(X_train, y_train)))
-    print("테스트 세트 정확도: {:.2f}".format(svc.score(X_test, y_test)))
-
-    joblib.dump(svc, 'model_save/parameter_c_'+str(set_C)+'_gamma_' +str(set_gamma)+ '.pkl')
+    print("훈련 세트 정확도: {:.4f}".format(svc.score(X_train, y_train)))
+    print("테스트 세트 정확도: {:.4f}".format(svc.score(X_test, y_test)))
+    if special:
+        joblib.dump(svc, 'model_save_special/parameter_c_'+str(set_C)+'_gamma_' +str(set_gamma)+ '.pkl')
+    else:
+        joblib.dump(svc, 'model_save/parameter_c_'+str(set_C)+'_gamma_' +str(set_gamma)+ '.pkl')
 
     return svc
 
