@@ -27,7 +27,7 @@ for line in lines_1:          #sql injection이 아닌 것들에 대해서
         for data in line_plain:
             b = data.encode("UTF-8")
             e = base64.b64encode(b)
-            line_data_list.append(math.log(int.from_bytes(e,byteorder='big')))
+            line_data_list.append(math.log(int.from_bytes(e,byteorder='big')))   # 재배치된 리스트의 각 워드를 base64로 해싱하고 그 값에 자연로그를 취한다
 
         if max_len < len(line_data_list):
             max_len = len(line_data_list)
@@ -53,7 +53,7 @@ for line in lines_2:         #sql injection인 것들에 대해서
         for data in line_plain:
             b = data.encode("UTF-8")
             e = base64.b64encode(b)
-            line_data_list.append(math.log(int.from_bytes(e,byteorder='big')))
+            line_data_list.append(math.log(int.from_bytes(e,byteorder='big')))  # 재배치된 리스트의 각 워드를 base64로 해싱하고 그 값에 자연로그를 취한다
 
         if max_len < len(line_data_list):
             max_len = len(line_data_list)

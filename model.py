@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy
 import mglearn
 
-def model_train(data_and_target, data_row_size, set_C, set_gamma, special):
+def model_train(data_and_target, data_row_size, set_C, set_gamma, special):  #데이터와 C값, gamma값을 받고 학습 
 
     data = data_and_target[0]
     target = data_and_target[1]    # data_and_target: [data, target]
@@ -26,20 +26,3 @@ def model_train(data_and_target, data_row_size, set_C, set_gamma, special):
     return svc
 
 
-
-def test():
-    X,y = make_blobs(centers=4, random_state=8)
-    y = y % 2
-
-    mglearn.discrete_scatter(X[:, 0], X[:, 1], y)
-    plt.xlabel("특성 0")
-    plt.ylabel("특성 1")
-
-    data = [X, y]
-
-    svc = model_train(data, 2, 10000.0, 0.8)
-
-    mglearn.plots.plot_2d_separator(svc, X, eps=.5)
-
-    plt.legend()
-    plt.show()
