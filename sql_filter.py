@@ -1,7 +1,7 @@
 import copy
 
 
-def tree_to_plain(tree, ret_list):
+def tree_to_plain(tree, ret_list):  #만들어진 AST를 하나의 리스트로 넣어주는 함수
     for data in tree:
         if type(data) is list:
             tree_to_plain(data, ret_list)
@@ -11,7 +11,7 @@ def tree_to_plain(tree, ret_list):
 
 
 
-def parse(origin_sql):
+def parse(origin_sql):  # 괄호 처리. () 내부는 하나의 리스트로 묶여짐, 리스트는 AST 생성 시 나중에 또 괄호 처리를 해주어야 함 
     sql = []
     flag = 0
     subquery=[]
@@ -25,21 +25,21 @@ def parse(origin_sql):
         elif origin_sql[i] is "(":
             start = i
             end = subparse(origin_sql,start)
-            if end != -1:
+            if end != -1:                                #괄호 처리가 필요
                 subquery = origin_sql[int(start)+1:end]
                 sql.append(subquery)
 
             else:
                 sql.append(origin_sql[i])
 
-        elif end < i:
+        elif end < i:                                   #괄호 처리가 이루어지면 처리한 괄호의 끝 부분 까지는 괄호 처리 작업이 진행되면 안됨
             sql.append(origin_sql[i])
 
     return sql
 
 
 
-def subparse(sql,start):
+def subparse(sql,start):    # 괄호 처리에 쓰이는 기능. 어디서 어디 까지를 괄호로 묶을 지 판단
     count = 1
     for i in range(start+1,len(sql)):
         
@@ -56,7 +56,7 @@ def subparse(sql,start):
 
 
 
-def splitcheck(origin_sql):
+def splitcheck(origin_sql):    # ' ' 단위로 잘린 문자열의 str 청크 리스트에 대해서 각 청크에서 '(', ')', '+', '&', '=' 을 주위의 문자들과 분리시키는 작업  예) ['(select', 'from'] -> ['(', 'select', 'from']
     sql = []
     for chunk in origin_sql:
         if ',' in chunk or '(' in chunk or ')' or '+' or '&' or '='in chunk:
@@ -121,8 +121,8 @@ def splitcheck(origin_sql):
 
 
 
-def find_chunk_end(sql, start):
-    sql_start_keywords = ['select', 'update', 'delete', 'insert']
+def find_chunk_end(sql, start):  # sql injecton에서 독립적인 구문들이 여러개 있는 경우 구문의 끝을 대략적으로 파악하는 함수. 구문의 끝은 새로운 구문의 시작과 비슷하다고 가정
+    sql_start_keywords = ['select', 'update', 'delete', 'insert']  # 새로운 구문이 시작될 때 나오는 키워드
     chunk_end = start
     chunk_end_found = False
 
@@ -140,7 +140,7 @@ def find_chunk_end(sql, start):
 
             
 
-def sql_tree_maker(origin_sql):
+def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트리 구조를 만드는 것이 아니라, sql이 아닌 구문 또한 정상적으로 결과값이 나와야 함
     sql = copy.deepcopy(origin_sql)
     
     sql_start_keywords = ['select', 'update', 'delete', 'insert']
@@ -370,9 +370,9 @@ def sql_tree_maker(origin_sql):
 
 
 
-        elif type(word) is list:
+        elif type(word) is list:            #리스트는 이전에 괄호 처리된 내용들 임으로 내부 내용에 대한 AST를 만들어 붙이는 방식으로 구현
             if idx < len(sql) - 1:
-                return sql[:idx] + [sql_tree_maker(parse(word))] + sql_tree_maker(sql[idx + 1:])
+                return sql[:idx] + [sql_tree_maker(parse(word))] + sql_tree_maker(sql[idx + 1:])  #내부 내용에 대해 괄호처리가 되어야 함
             else:
                 return sql[:idx] + [sql_tree_maker(parse(word))]
 

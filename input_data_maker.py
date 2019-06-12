@@ -7,15 +7,15 @@ fw1 = open('data_maker/sql_오탐.txt', 'r', encoding='utf-8')
 fw2 = open('data_maker/sql_정탐.txt', 'r', encoding='utf-8')
 
 
-data_int = [[], []]
+data_int = [[], []]  #data_int[0]: 각 데이터를 ast 로 만든 이후 리스트 하나로 뽑아낸 결과물, data_int[1]: sql injection 여부  0: sql injection 아님, 1: sql injection
 max_len = 0
 
 lines_1 = fw1.readlines()
-for line in lines_1:
+for line in lines_1:          #sql injection이 아닌 것들에 대해서
     if line is not  '':
-        line_split = line.split()
+        line_split = (line.lower()).split()
     
-        line_splitcheck = sql_filter.splitcheck(line_split)
+        line_splitcheck = sql_filter.splitcheck(line_split) #평문 -> splitcheck -> parse -> 
         line_parse = sql_filter.parse(line_splitcheck)
     
         line_tree = sql_filter.sql_tree_maker(line_parse)
@@ -37,9 +37,9 @@ for line in lines_1:
 
 
 lines_2 = fw2.readlines()
-for line in lines_2:
+for line in lines_2:         #sql injection인 것들에 대해서
     if line is not  '':
-        line_split = line.split()
+        line_split = (line.lower()).split()
     
         line_splitcheck = sql_filter.splitcheck(line_split)
         line_parse = sql_filter.parse(line_splitcheck)

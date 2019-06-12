@@ -9470,3 +9470,238 @@ content-type: application/octet-stream
 content-disposition: form-data; name="ews_sequence"
 content-type: application/octet-str
 ++++++++++++++++++
+POST /ebid.ct.ct.cmd.ctrcttotallistcmd.dev http/1.1
+referer: http://ebid.lh.or.kr/ebid.ct.ct.cmd.ctrcttotallistcmd.dev
+accept-language: ko-kr
+user-agent: mozilla/5.0 (windows nt 6.1; wow64; trident/7.0; rv:11.0) like gecko ews_agent
+content-type: multipart/form-data; boundary=------------------ewsc-mime-type
+content-length: 1590
+host: ebid.lh.or.kr
+dnt: 1
+cache-control: no-cache
+cookie: ews_setup=true-80; jsessionid=g1domwbcpaqedc5srp5ukrcgpgjaigtabccavhmhfccq12vrum1wfudsvyganj37.ebidwas2_servlet_engine1
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_message"
+content-type: text/xml
+
+<?xml version="1.0" encoding="euc-kr" ?>
+<message type="request">
+	<messageinfo>
+		<dllversion>1.0.0.0.1</dllversion>
+		<psrversion>20070110</psrversion>
+		<transid>{e7bc6297-a031-4c98-a6d5-00a43b2baa20}</transid>
+		<commandcode></commandcode>
+	</messageinfo>
+	<content>
+		<httpheader>
+			<method>post</method>
+			<accept-language>ko-kr</accept-language><content-type>application/x-www-form-urlencoded</content-type><user-agent>mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; wow64; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.3)</user-agent><referer>http://ebid.lh.or.kr/ebid.ct.ct.cmd.ctrcttotallistcmd.dev</referer></httpheader>
+		<subject>
+			<cryptotype>enveloped</cryptotype>
+			<data index="2" length="160">
+				<encrypt>
+					<alg>1.2.410.200004.1.4</alg>
+					<value/>
+				</encrypt>
+			</data>
+		</subject>
+	</content></message>
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_data"
+content-type: application/octet-stream
+
+?*??4??_?-?\-2?|?????`?????:[?|??ig??%??d?wm??g#????????w(`?9%{κ?la?i)?!mh???7???]i>??66ou?~6??u?ciy????8?e??????mwa&??t-??fl?
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_sequence"
+content-type: ap
+++++++++++++++++++
+POST /ebid.et.ts.cmd.bidcooperlistcmd.dev http/1.1
+referer: http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcpdoccstinsertcmd.dev
+accept-language: ko-kr
+user-agent: mozilla/5.0 (windows nt 10.0; wow64; trident/7.0; rv:11.0) like gecko ews_agent
+content-type: multipart/form-data; boundary=------------------ewsc-mime-type
+content-length: 1808
+host: ebid.lh.or.kr
+cache-control: no-cache
+cookie: ews_setup=true-80; jsessionid=4zagkvom9ml1aijhsi6rqcjwaafjiuew7qjuhpi14cbrv8emutmneaojh0ebdr0e.ebidwas2_servlet_engine1; ebidlhorkropennotice69=y
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_message"
+content-type: text/xml
+
+<?xml version="1.0" encoding="euc-kr" ?>
+<message type="request">
+	<messageinfo>
+		<dllversion>1.0.0.0.1</dllversion>
+		<psrversion>20070110</psrversion>
+		<transid>{162f24be-c068-4557-8e2d-6f0ebc841413}</transid>
+		<commandcode></commandcode>
+	</messageinfo>
+	<content>
+		<httpheader>
+			<method>post</method>
+			<accept-language>ko-kr</accept-language><content-type>application/x-www-form-urlencoded</content-type><user-agent>mozilla/5.0 (windows nt 10.0; wow64; trident/7.0; rv:11.0) like gecko</user-agent><referer>http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcpdoccstinsertcmd.dev</referer></httpheader>
+		<subject>
+			<cryptotype>enveloped</cryptotype>
+			<data index="2" length="496">
+				<encrypt>
+					<alg>1.2.410.200004.1.4</alg>
+					<value/>
+				</encrypt>
+			</data>
+		</subject>
+	</content></message>
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_data"
+content-type: application/octet-stream
+
+?kb?n????s?+???	s7ah?vk>n???????)?w_m???@/;??i=\h{d?xn/?{?j???&?kx??r`?**q????j4??
+??z???5???+!`?=???:?????.?zds?d?a?=g???"'?<?>?9m??@?????a????0'????e?1?hzy?~???e??x??h#t(?z???r??*d(p?1??(5?^?????]?f?b???f???mqg?%?8|w????0>?m??37??ckc???z?o?'f?v?6q;??=;???8?? ????p??\?*??@dk16??2??r'??k?s<?\?)*p6??46??.?;l?():????j??u$&@
+???m??zq?7u(eb??b??;.?i??_????#b???hpjb??????.e??]??n??#z???c}??)?'?!??2?o?8
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_sequence"
+content-type: ap
+++++++++++++++++++
+POST /ebid.et.ts.cmd.bidcooperlistcmd.dev http/1.1
+referer: http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcooperlistcmd.dev
+accept-language: ko-kr
+user-agent: mozilla/5.0 (windows nt 10.0; wow64; trident/7.0; rv:11.0) like gecko ews_agent
+content-type: multipart/form-data; boundary=------------------ewsc-mime-type
+content-length: 1571
+host: ebid.lh.or.kr
+cache-control: no-cache
+cookie: ews_setup=true-80; jsessionid=pycxb3nuwj2jnknrgb0buvbsayn2yhlr7szcbi7ib8tbua8xunla0mbu09jqhxa7.ebidwas2_servlet_engine1; ebidlhorkropennotice69=y
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_message"
+content-type: text/xml
+
+<?xml version="1.0" encoding="euc-kr" ?>
+<message type="request">
+	<messageinfo>
+		<dllversion>1.0.0.0.1</dllversion>
+		<psrversion>20070110</psrversion>
+		<transid>{fc743718-956e-4a72-984a-eff03be15134}</transid>
+		<commandcode></commandcode>
+	</messageinfo>
+	<content>
+		<httpheader>
+			<method>post</method>
+			<accept-language>ko-kr</accept-language><content-type>application/x-www-form-urlencoded</content-type><user-agent>mozilla/4.0 (compatible; msie 7.0; windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e; .net clr 2.0.50727; .net clr 3.0.30729; .net clr 3.5.30729; markanywebdrm#25143)</user-agent><referer>http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcooperlistcmd.dev</referer></httpheader>
+		<subject>
+			<cryptotype>enveloped</cryptotype>
+			<data index="2" length="160">
+				<encrypt>
+					<alg>1.2.410.200004.1.4</alg>
+					<value/>
+				</encrypt>
+			</data>
+		</subject>
+	</content></message>
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_data"
+content-type: application/octet-stream
+
+e????30?j??\%{??(?`m???>?n???[~???f?j??y?,?7??e?j?v^?^iλ?&"x`??y???8??\?*???1i?g??.??"?tiwx?t}5?y?(q@???.t?m??j???e?w?t?????彿wv?? ???
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_sequence"
+content-type: application/octet-str
+++++++++++++++++++
+POST /ebid.et.ts.cmd.bidcooperlistcmd.dev http/1.1
+referer: http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcooperlistcmd.dev
+accept-language: ko-kr
+user-agent: mozilla/5.0 (windows nt 10.0; wow64; trident/7.0; rv:11.0) like gecko ews_agent
+content-type: multipart/form-data; boundary=------------------ewsc-mime-type
+content-length: 1588
+host: ebid.lh.or.kr
+cache-control: no-cache
+cookie: ews_setup=true-80; jsessionid=dlaxa1l04cyr7q3swr1kkywqrku1qewwjmupfjb5ihq11ouvuxdfdavlcfspllfw.ebidwas2_servlet_engine1; ebidlhorkropennotice69=y
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_message"
+content-type: text/xml
+
+<?xml version="1.0" encoding="euc-kr" ?>
+<message type="request">
+	<messageinfo>
+		<dllversion>1.0.0.0.1</dllversion>
+		<psrversion>20070110</psrversion>
+		<transid>{a665d6d5-23ba-4c13-9e72-4070f743cd64}</transid>
+		<commandcode></commandcode>
+	</messageinfo>
+	<content>
+		<httpheader>
+			<method>post</method>
+			<accept-language>ko-kr</accept-language><content-type>application/x-www-form-urlencoded</content-type><user-agent>mozilla/4.0 (compatible; msie 7.0; windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e; markanyeps#25121)</user-agent><referer>http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcooperlistcmd.dev</referer></httpheader>
+		<subject>
+			<cryptotype>enveloped</cryptotype>
+			<data index="2" length="240">
+				<encrypt>
+					<alg>1.2.410.200004.1.4</alg>
+					<value/>
+				</encrypt>
+			</data>
+		</subject>
+	</content></message>
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_data"
+content-type: application/octet-stream
+
+kq?)?????r&?^????pru?p$o)?wo<)${?q???!?????66tj.??$i?h*uk?=????;w???????53o????pa??/?????f?p?`ji?!???=??`gl,??<?r??(?4?0b???\5!5s?g?$rto
+?@????????9?b?i8?g\:??.a?a[?f:?.s???????>d_???ndpm	s??8??`k
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_sequence"
+content-type: appl
+++++++++++++++++++
+POST /ebid.et.ts.cmd.bidcooperlistcmd.dev http/1.1
+referer: http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcooperlistcmd.dev
+accept-language: ko-kr
+user-agent: mozilla/5.0 (windows nt 6.1; wow64; trident/7.0; rv:11.0) like gecko ews_agent
+content-type: multipart/form-data; boundary=------------------ewsc-mime-type
+content-length: 1571
+host: ebid.lh.or.kr
+dnt: 1
+cache-control: no-cache
+cookie: ebidlhorkropennotice69=y; ebidlhorkropennotice70=y; ews_setup=true-80; jsessionid=j8tkgirck26u5hjrijbnltv8696bzevp0yhskx0gbrqnlozrukwcdv5a66phdfzo.ebidwas1_servlet_engine1
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_message"
+content-type: text/xml
+
+<?xml version="1.0" encoding="euc-kr" ?>
+<message type="request">
+	<messageinfo>
+		<dllversion>1.0.0.0.1</dllversion>
+		<psrversion>20070110</psrversion>
+		<transid>{8109fdc1-cec7-4c84-a244-fbd238a95e5f}</transid>
+		<commandcode></commandcode>
+	</messageinfo>
+	<content>
+		<httpheader>
+			<method>post</method>
+			<accept-language>ko-kr</accept-language><content-type>application/x-www-form-urlencoded</content-type><user-agent>mozilla/4.0 (compatible; msie 7.0; windows nt 6.1; wow64; trident/7.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; infopath.2; iftnxparam=1.0.1)</user-agent><referer>http://ebid.lh.or.kr/ebid.et.ts.cmd.bidcooperlistcmd.dev</referer></httpheader>
+		<subject>
+			<cryptotype>enveloped</cryptotype>
+			<data index="2" length="144">
+				<encrypt>
+					<alg>1.2.410.200004.1.4</alg>
+					<value/>
+				</encrypt>
+			</data>
+		</subject>
+	</content></message>
+
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_data"
+content-type: application/octet-stream
+
+w???4?r??wq?-e??r?0??_{+/@gn*us?wn??{??&n?g??o?:????`b??`#"scdwj~?m?t?!x?m${n??	???z??+\?$?v/>`?j?????p?w`28a??t?{???s/?4
+--------------------ewsc-mime-type
+content-disposition: form-data; name="ews_sequence"
+content-type: application/octet-str
+++++++++++++++++++
