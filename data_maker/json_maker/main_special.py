@@ -51,7 +51,8 @@ word =[  # SQL
 
 
 dirname = "../utf8/"
-#파일마다 열순서가 다르다 그래서 특정 문자가 몇번째 열에잇는지 구하는것
+#파일마다 열순서가 달라서 특정 문자가 몇번째 열에 있는지 구한다
+
 time_index = index_dict("장비발생시간",dirname)
 sip_index = index_dict("출발지IP",dirname)
 sport_index = index_dict("출발지포트",dirname)
@@ -79,11 +80,11 @@ for file in filenames:
 	for row in rdr:
 		file_data={}
 		try:
-			if check==0:    #엑셀 첫행 건너뛰기 용
+			if check==0:    #엑셀 첫행 건너뛰기
 				check+=1
 				continue
-			#json.dump 하면 이스케이프문자 그대로 덤프되서 이렇게 일일히 다써줌
-			if check!=1:    #엑셀 첫행 건너뛰기 용
+
+			if check!=1:    #엑셀 첫행 건너뛰기
 				check+=1
 				csvtojson.write(",\n")
 			csvtojson.write("{")
@@ -108,27 +109,15 @@ for file in filenames:
 				if wrd[0] in raw_payload:
 					tmp_payload = tmp_payload + wrd[1]
 
-			#base64_raw_payload = base64.b64encode(raw_payload.encode('utf-8'))
-			
-			#json_raw에서나오는 raw데이터 포함하게함
-			#csvtojson.write('\n\t"RAW_PAYLOAD": '+'"'+base64_raw_payload.decode()+'",' )
 
 			csvtojson.write('\n\t"PAYLOAD":' +'"'+tmp_payload+'"')
-			'''
-			csvtojson.write('\n\t"PAYLOAD":' +'[')
-			payload_json_bunch = pay2json( row[payload_index[file]]  ,file )        #한칸에 GET POS몰려서 적혀있을경우 패킷이 여러개있어서 bunch라고 이름지음
-			#payload_urldecode = urllib.parse.unquote(payload_json_bunch)   #url디코드해줌
-			#payload_base64 = base64.b64encode(payload_urldecode.encode("utf-8")).decode("utf-8")   #url디코드한걸 base64로 만듬
-			#csvtojson.write('"')           # "PAYLOAD" : ["base64인코딩한거"] 이형식해줄려고 "씀
-			csvtojson.write(payload_json_bunch) 
-			#csvtojson.write('"')
-			csvtojson.write(']')
-			'''
+
+
 			csvtojson.write("\n}")
 			check +=1
 			
 			
-		except IndexError:          #12110301_12110500_ok.csv 에 공백열이잇다. 그래서 예외처리
+		except IndexError:          #공백 열이 있을 시
 			pass
 
 	f.close()
