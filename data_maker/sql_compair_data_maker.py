@@ -14,18 +14,18 @@ fnames1 = []
 fnames2 = []
 
 for frame in fnames:
-    if '오탐' in frame:
+    if '오탐' in frame: #IPS 장비가 판단한 것중 잘못 탐지한 것들
         fnames1.append(frame)
 
-    elif '정탐' in frame:
+    elif '정탐' in frame: #IPS 장비가 판단한 것중 제대로 탐지 한 것들
         fnames2.append(frame)
         
 
 sql_inject_key = ['sql', 'injection']
 sql_inject_nkey = ['exploit']
 
-# 오탐 파일
-sql_json_1 = open("sql_json_1.json", "w", encoding="utf-8")
+# sql injection이 아닌 것들
+sql_json_1 = open("sql_json_1.json", "w", encoding="utf-8") # sql injection이 아닌 것들은 sql_json_1.json에 저장된다
 sql_json_1.write("[\n")
 flag = 0
 for fname in fnames1:
@@ -38,7 +38,7 @@ for fname in fnames1:
     check =0
     for data in json_data:
         msg = data['MSG']
-        if msg_check.msg_check(msg, sql_inject_key,sql_inject_nkey):
+        if msg_check.msg_check(msg, sql_inject_key,sql_inject_nkey): #sql injection으로 탐지 하였는가? 오탐인데 sql injection으로 탐지 하였으면 sql injection이 아님
             if flag == 1 and check ==0:
                 sql_json_1.write(",\n")
             if check !=0:
@@ -69,7 +69,7 @@ for fname in fnames2:
     check =0
     for data in json_data:
         msg = data['MSG']
-        if not msg_check.msg_check(msg, sql_inject_key,sql_inject_nkey):
+        if not msg_check.msg_check(msg, sql_inject_key,sql_inject_nkey): #sql injection으로 탐지 하지 않았는가? 정탐인데 sql injection으로 탐지 하지 않았다면 sql injection이 아님
             if flag == 1 and check ==0:
                 sql_json_1.write(",\n")
             if check !=0:
@@ -95,8 +95,8 @@ sql_json_1.close()
 
 
 
-# 정탐 파일
-sql_json_2 = open("sql_json_2.json", "w", encoding="utf-8")
+# sql injection인 것들
+sql_json_2 = open("sql_json_2.json", "w", encoding="utf-8") # sql injection인 것들은 sql_json_2.json에 저장된다
 sql_json_2.write("[\n")
 flag = 0
 for fname in fnames2:
@@ -109,7 +109,7 @@ for fname in fnames2:
     check =0
     for data in json_data:
         msg = data['MSG']
-        if msg_check.msg_check(msg, sql_inject_key,sql_inject_nkey):
+        if msg_check.msg_check(msg, sql_inject_key,sql_inject_nkey): #sql injection으로 탐지 하였는가? 정탐인데 sql injection으로 탐지 하였으면 sql injection임
             if flag == 1 and check ==0:
                 sql_json_2.write(",\n")
             if check !=0:
