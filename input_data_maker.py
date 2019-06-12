@@ -13,9 +13,9 @@ max_len = 0
 lines_1 = fw1.readlines()
 for line in lines_1:          #sql injection이 아닌 것들에 대해서
     if line is not  '':
-        line_split = (line.lower()).split()
+        line_split = (line.lower()).split()  #평문 -> lowercase + split() -> splitcheck -> parse -> sql_tree_maker -> tree_to_plain
     
-        line_splitcheck = sql_filter.splitcheck(line_split) #평문 -> splitcheck -> parse -> 
+        line_splitcheck = sql_filter.splitcheck(line_split) 
         line_parse = sql_filter.parse(line_splitcheck)
     
         line_tree = sql_filter.sql_tree_maker(line_parse)
@@ -39,7 +39,7 @@ for line in lines_1:          #sql injection이 아닌 것들에 대해서
 lines_2 = fw2.readlines()
 for line in lines_2:         #sql injection인 것들에 대해서
     if line is not  '':
-        line_split = (line.lower()).split()
+        line_split = (line.lower()).split()  #평문 -> lowercase + split() -> splitcheck -> parse -> sql_tree_maker -> tree_to_plain
     
         line_splitcheck = sql_filter.splitcheck(line_split)
         line_parse = sql_filter.parse(line_splitcheck)
