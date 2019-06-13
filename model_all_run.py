@@ -40,3 +40,4 @@ while(C_max >= C):
 		model.model_train(data, data_row_size, C, gamma, False)
 		gamma *= gamma_interval
 	C *= C_interval
+	

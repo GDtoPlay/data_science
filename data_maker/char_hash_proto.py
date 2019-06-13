@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-
 import json
 import base64
 from string import ascii_lowercase, ascii_uppercase
@@ -13,8 +12,6 @@ with open('sql_json_2.json') as sql_injection_json_2: #sql injection인 것들
 
     json_data_2 = json.load(sql_injection_json_2)
 
-
-            
 def sql_str_maker(file, json_data):
     for sql_json in json_data:
         if "DATA" in sql_json:

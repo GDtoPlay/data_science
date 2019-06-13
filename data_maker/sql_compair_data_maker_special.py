@@ -78,11 +78,8 @@ for fname in fnames2:
             flag =1
     jsonfile.close()
     
-
 sql_json_1.write("\n]")
 sql_json_1.close()
-
-
 
 # 정탐 파일
 sql_json_2 = open("sql_json_special2.json", "w", encoding="utf-8")

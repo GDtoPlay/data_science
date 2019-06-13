@@ -1,7 +1,7 @@
 import copy
 
-
-def tree_to_plain(tree, ret_list):  #만들어진 AST를 하나의 리스트로 넣어주는 함수
+#만들어진 AST를 하나의 리스트로 넣어주는 함수
+def tree_to_plain(tree, ret_list):  
     for data in tree:
         if type(data) is list:
             tree_to_plain(data, ret_list)
@@ -9,9 +9,8 @@ def tree_to_plain(tree, ret_list):  #만들어진 AST를 하나의 리스트로 
         else:
             ret_list.append(data)
 
-
-
-def parse(origin_sql):  # 괄호 처리. () 내부는 하나의 리스트로 묶여짐, 리스트는 AST 생성 시 나중에 또 괄호 처리를 해주어야 함 
+# 괄호 처리. () 내부는 하나의 리스트로 묶여짐, 리스트는 AST 생성 시 나중에 또 괄호 처리를 해주어야 함
+def parse(origin_sql):   
     sql = []
     flag = 0
     subquery=[]
@@ -37,9 +36,8 @@ def parse(origin_sql):  # 괄호 처리. () 내부는 하나의 리스트로 묶
 
     return sql
 
-
-
-def subparse(sql,start):    # 괄호 처리에 쓰이는 기능. 어디서 어디 까지를 괄호로 묶을 지 판단
+# 괄호 처리에 쓰이는 기능. 어디서 어디 까지를 괄호로 묶을 지 판단
+def subparse(sql,start):    
     count = 1
     for i in range(start+1,len(sql)):
         
@@ -53,10 +51,8 @@ def subparse(sql,start):    # 괄호 처리에 쓰이는 기능. 어디서 어�
         
     return -1
 
-
-
-
-def splitcheck(origin_sql):    # ' ' 단위로 잘린 문자열의 str 청크 리스트에 대해서 각 청크에서 '(', ')', '+', '&', '=' 을 주위의 문자들과 분리시키는 작업  예) ['(select', 'from'] -> ['(', 'select', 'from']
+# ' ' 단위로 잘린 문자열의 str 청크 리스트에 대해서 각 청크에서 '(', ')', '+', '&', '=' 을 주위의 문자들과 분리시키는 작업  예) ['(select', 'from'] -> ['(', 'select', 'from']
+def splitcheck(origin_sql):    
     sql = []
     for chunk in origin_sql:
         if ',' in chunk or '(' in chunk or ')' or '+' or '&' or '='in chunk:
@@ -119,9 +115,8 @@ def splitcheck(origin_sql):    # ' ' 단위로 잘린 문자열의 str 청크 �
 
     return sql
 
-
-
-def find_chunk_end(sql, start):  # sql injecton에서 독립적인 구문들이 여러개 있는 경우 구문의 끝을 대략적으로 파악하는 함수. 구문의 끝은 새로운 구문의 시작과 비슷하다고 가정
+# sql injecton에서 독립적인 구문들이 여러개 있는 경우 구문의 끝을 대략적으로 파악하는 함수. 구문의 끝은 새로운 구문의 시작과 비슷하다고 가정
+def find_chunk_end(sql, start):  
     sql_start_keywords = ['select', 'update', 'delete', 'insert']  # 새로운 구문이 시작될 때 나오는 키워드
     chunk_end = start
     chunk_end_found = False
@@ -136,11 +131,9 @@ def find_chunk_end(sql, start):  # sql injecton에서 독립적인 구문들이 
     chunk_end = chunk_end - 1
 
     return chunk_end
-
-
             
-
-def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트리 구조를 만드는 것이 아니라, sql이 아닌 구문 또한 정상적으로 결과값이 나와야 함
+# sql AST를 만드는 함수, 엄격하게 트리 구조를 만드는 것이 아니라, sql이 아닌 구문 또한 정상적으로 결과값이 나와야 함
+def sql_tree_maker(origin_sql):  
     sql = copy.deepcopy(origin_sql)
     
     sql_start_keywords = ['select', 'update', 'delete', 'insert']
@@ -176,8 +169,6 @@ def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트
             else:
                 continue
             
-
-
         elif word == 'update':              # update ~~~ set ~~~ where ~~
             chunk_end = find_chunk_end(sql, idx + 1)
             sql_chunk = sql[idx: chunk_end + 1]
@@ -222,10 +213,6 @@ def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트
             else:                           #not update query
                 continue
 
-
-
-
-
         elif word == 'delete':              #delete from ~~~ where ~~~
             if idx < len(sql) - 1 and sql[idx + 1] == 'from':
                 chunk_end = find_chunk_end(sql, idx + 2)
@@ -263,19 +250,13 @@ def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트
                     else:                                                       # delete from
                         mid_chunk = ['delete', 'from']
 
-
-
                 if chunk_end < len(sql) - 1:
                     return sql[:idx] + mid_chunk + sql_tree_maker(sql[chunk_end + 1:])
                 else:
                     return sql[:idx] + mid_chunk
-                        
 
             else:                                                               #not delete query 
                 continue
-
-
-
 
         elif word == 'select' or word == 'from' or word == 'where':     #select ~~~ from ~~~ where ~~~
             chunk_end = find_chunk_end(sql, idx + 1)
@@ -324,7 +305,6 @@ def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트
                 for sub_word in sql_chunk:
                     if type(sub_word) is list:
                         mid_chunk.append(sql_tree_maker(parse(sub_word)))
-
                     else:
                         mid_chunk.append(sub_word)
                         
@@ -349,7 +329,6 @@ def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트
                         if last_pos < len(sql_chunk) -1 and sub_idx == len(pos_in_order_list) - 1:
                             func_parameters.append(sql_chunk[last_pos + 1: ])
                             
-
                     else:
                         if sql_chunk[last_pos + 1: pos] != []:
                             func_parameters.append(sql_chunk[last_pos + 1: pos])
@@ -367,8 +346,6 @@ def sql_tree_maker(origin_sql):  # sql AST를 만드는 함수, 엄격하게 트
                     return sql[:idx] + mid_chunk + sql_tree_maker(sql[chunk_end + 1:])
                 else:
                     return sql[:idx] + mid_chunk
-
-
 
         elif type(word) is list:            #리스트는 이전에 괄호 처리된 내용들 임으로 내부 내용에 대한 AST를 만들어 붙이는 방식으로 구현
             if idx < len(sql) - 1:
