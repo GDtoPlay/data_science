@@ -5,8 +5,6 @@ import urllib.parse
 import base64
 
 
-'''	자질구레한 함수들
-	이건 안봐도 됩니다'''
 
 #페이로드 몇번째 열에 있는지 찾는 코드
 def index_dict(string,dirname):
@@ -27,22 +25,7 @@ def index_dict(string,dirname):
 		f.close()
 	return indices
 
-#특정 열만 추출해서 export폴더에 생성
-def extract_col(index_dict):
-	filenames = search("./logs/") #file search
-	filenames.remove("desktop.ini")
-	for file in filenames:
-		f = open("./logs/"+file ,'r',encoding='utf-8')
-		f2 = open("./export/"+file, 'wt' ,encoding='utf-8',newline='')
-		rdr = csv.reader(f)
-		wr = csv.writer(f2)
-		index = index_dict[file]
-		for line in rdr:
-			paylod=[]
-			paylod.append(line[index])
-			wr.writerow(paylod)
-		f.close()
-		f2.close()
+
 		
 def search(dirname):
     filenames = os.listdir(dirname)
@@ -57,6 +40,8 @@ def find_index(row_1,string):
 	if len(row_1) == cnt:
 		return 99
 	return cnt
+
+	
 def debug(name,token,method):
 	f = open("../error/"+name,"a",encoding="utf-8")
 	f.write("\n"+method+" "+token+"\n++++++++++++++++++") #POST /test.asp 로 만들기 
@@ -73,8 +58,7 @@ def totxt(token,method,file):
 
 
 
-'''	파싱에 본격적으로 사용되는 함수들
-	이 부분부터 코드보시면 제가 어떻게 파싱하는지 압니다.'''
+
 	
 def strcat(token2): # 파라미터에 = 들어갔을경우 예외처리
 	str_=''
